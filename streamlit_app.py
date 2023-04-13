@@ -11,7 +11,7 @@ import librosa
 import tensorflow as tf
 from tensorflow import keras
 from audio_recorder_streamlit import audio_recorder
-model=tf.keras.models.load_model(r"C:\Users\sairam\Downloads\emotion detection through audio-2.9.h5")
+model=tf.keras.models.load_model(r"emotion detection through audio-2.9.h5")
 html_temp = """ 
   <div style="background-color:pink ;padding:10px">
   <h2 style="color:white;text-align:center;">EMOTION DETECTION USING SPEECH</h2>
@@ -53,4 +53,6 @@ else:
         else:
             out='sad'
         st.success('The detected emotion in the audio input is:- '+str(out))
-
+st.write('DEVELOPED BY V.A.SAIRAM')
+st.write('email= sairamadithya2002@gmail.com')
+st.write('linkedin= https://www.linkedin.com/in/sairamadithya/')
