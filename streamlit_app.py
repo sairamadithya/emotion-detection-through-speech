@@ -52,6 +52,7 @@ else:
         else:
             out='sad'
         st.success('The detected emotion in the audio input is:- '+str(out))
+        st.balloons()
 st.warning('The model has been trained on american english accent. Hence it might not work out properly for regional language based sentences. Will develop a model that works on regional languages in future!!')
 st.write('DEVELOPED BY V.A.SAIRAM')
 st.write('email= sairamadithya2002@gmail.com')
