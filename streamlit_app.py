@@ -37,7 +37,6 @@ else:
         mfccs_scaled_features=mfccs_scaled_features.reshape(1,-1)
         predicted_label=model.predict(mfccs_scaled_features)
         a=np.argmax(predicted_label,axis=1)
-        st.write(a)
         if a==0:
             out='angry'
         elif a==1:
